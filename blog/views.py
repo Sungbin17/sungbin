@@ -15,36 +15,7 @@ from .models import *
 
 
 def article_list(request):
-	article_list = Article.objects.all()
-	ctx = {
-		'article_list': article_list,
-	}
-	return render(request, 'blog/article_list.html', ctx)
-
-def article1(request):
-	return render(request, 'blog/article1.html')
+	return render(request, 'blog/main.html')
 
 
-
-def article2(request):
-	return render(request, 'blog/article2.html')
-
-
-def article3(request):
-	return render(request, 'blog/article3.html')
-
-def article4(request):
-	return render(request, 'blog/article4.html')
-
-def article5(request):
-	return render(request, 'blog/article5.html')
-
-def article6(request):
-	return render(request, 'blog/article6.html')
-
-def article7(request):
-	return render(request, 'blog/movie.html')
-
-def article8(request):
-	return render(request, 'blog/crime.html')
 
